@@ -4,7 +4,9 @@ metadata:
   name: "dev-hub-test-demo"     # set value defined in the (scaffolding/golden path) template
                                     # dump is a filter:
                                     # https://backstage.io/docs/features/software-templates/builtin-actions/
-                                    # https://backstage.io/docs/features/software-templates/writing-templates/#built-in-filters
+                                    # https://backstage.io/docs/features/software-templates/writing-templates/#built-in-filters 
+  annotations:
+    argocd/app-selector: 'simple-hello-world-service-a'
 spec:
   type: service
   lifecycle: experimental
