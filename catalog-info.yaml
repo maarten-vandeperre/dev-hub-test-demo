@@ -5,6 +5,8 @@ metadata:
                                     # dump is a filter:
                                     # https://backstage.io/docs/features/software-templates/builtin-actions/
                                     # https://backstage.io/docs/features/software-templates/writing-templates/#built-in-filters
+  labels:
+    argocd/app-selector: rht-gitops.com/demo-project=simple-hello-world-service-a
 spec:
   type: service
   lifecycle: experimental
