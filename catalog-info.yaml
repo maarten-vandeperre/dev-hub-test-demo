@@ -8,6 +8,8 @@ metadata:
   annotations:
     argocd/app-selector: rht-gitops.com/demo-project=simple-hello-world-service-a
     argocd/instance-name: argoInstance1 # as defined in app-config-rhdh.yaml
+    backstage.io/kubernetes-id: simple-hello-world-service-a
+    janus-idp.io/tekton: simple-hello-world-service-a
 spec:
   type: service
   lifecycle: experimental
