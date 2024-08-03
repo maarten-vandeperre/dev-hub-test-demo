@@ -8,8 +8,10 @@ metadata:
   annotations:
     argocd/app-selector: rht-gitops.com/demo-project=simple-hello-world-service-a
     argocd/instance-name: argoInstance1 # as defined in app-config-rhdh.yaml
-    backstage.io/kubernetes-id: simple-hello-world-service-a
-    janus-idp.io/tekton: simple-hello-world-service-a
+    # https://docs.redhat.com/en/documentation/red_hat_developer_hub/1.2/html/configuring_plugins_in_red_hat_developer_hub/rhdh-installing-dynamic-plugins#installing-tekton-plugin
+    backstage.io/kubernetes-id: dev-hub-test-demo
+    janus-idp.io/tekton: dev-hub-test-demo
+    backstage.io/kubernetes-namespace: demo-project
 spec:
   type: service
   lifecycle: experimental
