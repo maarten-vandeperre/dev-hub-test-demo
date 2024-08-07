@@ -12,6 +12,8 @@ metadata:
     backstage.io/kubernetes-id: dev-hub-test-demo
     janus-idp.io/tekton: dev-hub-test-demo
     backstage.io/kubernetes-namespace: demo-project
+#    jenkins.io/job-full-name: <jenkins-instance-name-from-rhdh-config>:<team>/artistLookup-build<job-name>
+    jenkins.io/job-full-name: default-jenkins:test
 spec:
   type: service
   lifecycle: experimental
