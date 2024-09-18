@@ -15,8 +15,9 @@ metadata:
 #    jenkins.io/job-full-name: <jenkins-instance-name-from-rhdh-config>:<team>/artistLookup-build<job-name>
 #    https://jenkins.example.com/job/teamA/job/artistLookup-build becomes <jenkins-instance-name>/teamA/artistLookup-build
     jenkins.io/job-full-name: default-jenkins:demo-project/demo-project-demo-app-pipeline
-# !!! The Red Hat OpenShift Dev Spaces instance is not accessible using the source code editor if the backstage.io/kubernetes-namespace annotation is added to the catalog-info.yaml file.
-    backstage.io/kubernetes-namespace: demo-project # https://www.npmjs.com/package/@janus-idp/backstage-plugin-topology 
+#    !!! The Red Hat OpenShift Dev Spaces instance is not accessible using the source code editor if the backstage.io/kubernetes-namespace annotation is added to the catalog-info.yaml file.
+    # https://www.npmjs.com/package/@janus-idp/backstage-plugin-topology 
+    backstage.io/kubernetes-namespace: demo-project 
 
 spec:
   type: service
