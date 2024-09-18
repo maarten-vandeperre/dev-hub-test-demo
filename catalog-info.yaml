@@ -9,7 +9,6 @@ metadata:
     argocd/app-selector: rht-gitops.com/demo-project=simple-hello-world-service-a
     argocd/instance-name: argoInstance1 # as defined in app-config-rhdh.yaml
     # https://docs.redhat.com/en/documentation/red_hat_developer_hub/1.2/html/configuring_plugins_in_red_hat_developer_hub/rhdh-installing-dynamic-plugins#installing-tekton-plugin
-    backstage.io/kubernetes-id: dev-hub-test-demo
     janus-idp.io/tekton: dev-hub-test-demo
 #    jenkins.io/job-full-name: <jenkins-instance-name-from-rhdh-config>:<team>/artistLookup-build<job-name>
 #    https://jenkins.example.com/job/teamA/job/artistLookup-build becomes <jenkins-instance-name>/teamA/artistLookup-build
@@ -17,6 +16,7 @@ metadata:
 #    !!! The Red Hat OpenShift Dev Spaces instance is not accessible using the source code editor if the backstage.io/kubernetes-namespace annotation is added to the catalog-info.yaml file.
     # https://www.npmjs.com/package/@janus-idp/backstage-plugin-topology 
     backstage.io/kubernetes-namespace: demo-project 
+    backstage.io/kubernetes-id: dev-hub-test-demo
 
 spec:
   type: service
