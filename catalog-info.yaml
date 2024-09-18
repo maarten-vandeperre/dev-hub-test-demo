@@ -14,6 +14,7 @@ metadata:
     backstage.io/kubernetes-namespace: demo-project
 #    jenkins.io/job-full-name: <jenkins-instance-name-from-rhdh-config>:<team>/artistLookup-build<job-name>
 #    https://jenkins.example.com/job/teamA/job/artistLookup-build becomes <jenkins-instance-name>/teamA/artistLookup-build
+
     jenkins.io/job-full-name: default-jenkins:demo-project/demo-project-demo-app-pipeline
 
 spec:
